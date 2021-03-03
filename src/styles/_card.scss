@@ -1,0 +1,9 @@
+@use '@material/card/mdc-card';
+@use '@material/card';
+@use '@material/theme';
+
+@include card.core-styles;
+
+.card-thick-outline {
+    @include card.outline(lightgrey, 2px)
+}

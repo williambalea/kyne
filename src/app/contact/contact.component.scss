@@ -1,0 +1,32 @@
+:host {
+  width: 100%;
+  overflow: auto;
+}
+
+.contact-body {
+  padding: 24px 100px;
+  display: flex;
+  margin: auto;
+}
+
+.card-media {
+  background-image: url('/assets/building.jpg');
+}
+
+.card-contact {
+  width: 50%;
+  margin: 10px 10px;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.facebook-link {
+  color:#4267B2;
+}

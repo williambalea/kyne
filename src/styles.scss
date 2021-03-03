@@ -19,5 +19,11 @@
 // MDC Drawer
 @use './styles/drawer';
 
+// MDC card
+@use './styles/card';
+
 // Angular MDC
 @use '@angular-mdc/theme/material';
+
+// MDC data-table
+@use './styles/data-table';

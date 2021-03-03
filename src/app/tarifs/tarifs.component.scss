@@ -1,0 +1,26 @@
+:host {
+  width: 100%;
+  overflow: auto;
+}
+
+.tarifs-body {
+  margin: auto;
+  padding: 24px 100px;
+}
+
+.card-media {
+  width: 100px;
+  height: 100px;
+  transform: translate(-1px, 0px);
+}
+
+.card-media-list {
+  display: flex;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.card-content {
+  align-self: center;
+  margin: 16px;
+}
