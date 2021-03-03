@@ -10,9 +10,11 @@ export class AppComponent {
 
   // icon: '' if i want to insert icons in the future
   destinations = [
-    { label: 'Accueil', icon: '', activated: true },
-    { label: 'Tarifs', activated: false },
-    { label: 'Notre équipe', activated: false },
-    { label: 'Nous contacter', activated: false }
+    { label: 'Accueil', icon: '', link: 'accueil', activated: true },
+    { label: 'Tarifs', link: 'tarifs', activated: false },
+    { label: 'Notre équipe', link: 'equipe', activated: false },
+    { label: 'Nous contacter', link: 'contacts', activated: false }
   ];
+
+  phone = "514-513-2856";
 }
