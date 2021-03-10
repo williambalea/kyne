@@ -1,0 +1,45 @@
+:host {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .services-offered-body {
+    margin: auto;
+    padding: 24px 100px;
+    text-align: justify;
+  }
+  
+  .card-media {
+    width: 60px;
+    border-radius: 50px;
+    margin: 5px;
+  }
+  
+  .card-media-list {
+    display: flex;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+  }
+  
+  .card-content {
+    margin: auto 12px;
+    font-weight: 200;
+  }
+  
+  .card-content > h4 {
+    font-weight: 400;
+  }
+  
+  .card-content > p {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+  
+  .content {
+    background-color: rgb(243, 243, 243);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }

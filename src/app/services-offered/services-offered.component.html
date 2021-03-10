@@ -1,0 +1,28 @@
+<div class="services-offered-body">
+    <h2>Services offerts</h2>
+  <p>
+    Notre équipe est spécialisé en traitements spécifiques selon les pathologies suivantes :
+    lombalgie, dorsalgie, sciatalgie, cervicalgie, problématiques musculo-squelettiques, récupération
+    après chirurgie et posture. Nous offrons également les soins suivants.
+  </p>
+
+  <mdc-card>
+    <div *ngFor="let service of services">
+      <mdc-list-divider *ngIf="service != services[0]"></mdc-list-divider>
+      <mdc-card-primary-action (click)="collapse($event.currentTarget)">
+        <div class="card-media-list">
+          <div class="card-media mdc-card__media mdc-card__media--square" [style.background-image]="service.photo">
+          </div>
+          <div class="card-content">
+            <h4>{{service.title}}</h4>
+          </div>
+        </div>
+      </mdc-card-primary-action>
+      <div class="card-media-list content">
+        <div class="card-content">
+          <p>{{service.desc}}</p>
+        </div>
+      </div>
+    </div>
+  </mdc-card>
+</div>

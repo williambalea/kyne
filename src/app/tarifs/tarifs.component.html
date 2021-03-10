@@ -1,32 +1,35 @@
 <div class="tarifs-body">
-
-  <h2>Collapsibles</h2>
-
+  <h2>Tarifs</h2>
   <mdc-card>
-    <button type="button" class="collapsible" (click)="collapse($event.target)">Open Collapsible</button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
+    <mdc-data-table class="table">
+      <table mdcDataTableTable>
+        <thead>
+          <tr mdcDataTableHeaderRow>
+            <th mdcDataTableHeaderCell>Kinésithérapie • Orthothérapie • Massothérapie</th>
+          </tr>
+        </thead>
+        <tbody mdcDataTableContent>
+          <tr mdcDataTableRow *ngFor="let item of pricesMasso">
+            <td mdcDataTableCell>{{item.service}}</td>
+            <td mdcDataTableCell class="table-price-col">{{item.price | currency}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <table mdcDataTableTable>
+        <thead>
+          <tr mdcDataTableHeaderRow>
+            <th mdcDataTableHeaderCell>Autres services</th>
+          </tr>
+        </thead>
+        <tbody mdcDataTableContent>
+          <tr mdcDataTableRow *ngFor="let item of pricesOthers">
+            <td mdcDataTableCell>{{item.service}}</td>
+            <td mdcDataTableCell class="table-price-col">{{item.price | currency}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </mdc-data-table>
   </mdc-card>
 
-  
-  <h2>Services offerts</h2>
-  <p>
-    Notre équipe est spécialisé en traitements spécifiques selon les pathologies suivantes : 
-    lombalgie, dorsalgie, sciatalgie, cervicalgie, problématiques musculo-squelettiques, récupération
-    après chirurgie et posture. Nous offrons également les soins suivants.
-  </p>
-
-  <mdc-card class="card-thick-outline" [outlined]=true>
-    <div *ngFor="let service of services">
-      <mdc-list-divider *ngIf="service != services[0]"></mdc-list-divider>
-      <div class="card-media-list">
-        <div class="card-media mdc-card__media mdc-card__media--square" [style.background-image]="service.photo"></div>
-        <div class="card-content">
-          <h4>{{service.title}}</h4>
-          <p>{{service.desc}}</p>
-        </div>
-      </div>
-    </div>
-  </mdc-card>
+  <p class="call-message">Appelez-nous pour savoir ce qui vous conviendrait le mieux!</p>
 </div>

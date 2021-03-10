@@ -6,76 +6,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tarifs.component.scss']
 })
 export class TarifsComponent implements OnInit {
-  services = [
-    { photo: 'url(/assets/tarifs/dos.jpg)', 
-      title: 'Kinésithérapie • Orthothérapie • Massothérapie • Ostéopathie', 
-      desc: "Consiste à un ensemble de techniques (mobilisation passive, active, trigger point, massage) \
-      dans le but d’augmenter la mobilité et diminuer les tensions musculaires."
-    },
-    { photo: 'url(/assets/tarifs/epaule.jpg)', 
-      title: 'Massage suédois', 
-      desc: "Procure une détente musculaire, \
-      diminution de l’hormone de stress, diminution des raideurs musculaires et favorise le retour veineux."
-    },
-    { photo: 'url(/assets/tarifs/dos.jpg)', 
-      title: 'Massage thérapeutique', 
-      desc: "Massage en profondeur, il diminue les tensions \
-      musculaires et les points de fatigue. Il agit sur les articulations, la respiration et le système \
-      nerveux. Il améliore les problèmes d'insomnie en apportant un sommeil plus profond et récupérateur, \
-      diminue les maux de tête, les problèmes d'arthrite et d’arthrose, soulage la sciatalgie et la lombalgie."
-    },
-    { photo: 'url(/assets/tarifs/dos.jpg)', 
-      title: 'Massage sportif',
-      desc: "Le massage sportif combine une variété de techniques \
-      incluant le massage profond, l’étirement myofascial, les ‘trigger points’, etc. Il est recommandé \
-      lorsqu’on veut se préparer à une performance ou retrouver une forme athlétique. Il prévient les \
-      blessures, élimine les crampes musculaires, élimine les douleurs dues aux tensions musculaires, \
-      réduit les spasmes et les courbatures, redonne la souplesse musculaire et l’amplitude articulaire \
-      maximale et permet une récupération plus rapide après une compétition."
-    },
-    { photo: 'url(/assets/tarifs/dos.jpg)',
-      title: '',
-      desc: ""
-    },
-    { photo: 'url(/assets/tarifs/dos.jpg)',
-      title: '', 
-      desc: ""
-    },
-    { photo: 'url(/assets/tarifs/dos.jpg)',
-      title: '', 
-      desc: ""
-    },
-    { photo: 'url(/assets/tarifs/dos.jpg)',
-      title: '', 
-      desc: ""
-    },
-    { photo: 'url(/assets/tarifs/dos.jpg)', 
-      title: '', 
-      desc: ""
-    },
-    { photo: 'url(/assets/tarifs/dos.jpg)',
-      title: '', 
-      desc: ""
-    },
-    { photo: 'url(/assets/tarifs/dos.jpg)', 
-      title: '',
-      desc: ""
-    },
+  pricesMasso = [
+    {service: "30 min", price: 40},
+    {service: "60 min", price: 70},
+    {service: "90 min", price: 95},
+    {service: "120 min", price: 120},
+    {service: "Pour enfant", price: 30},
   ];
+
+  pricesOthers = [
+    {service: "Massage aux pierres chaudes", price: 130},
+    {service: "Massage aux quatres mains", price: 120},
+    {service: "Drainage Lymphatique", price: 70},
+    {service: "Réflexologie", price: 70},
+    {service: "Ostéopathie", price: 80},
+  ];
+
   
   constructor() { }
 
   ngOnInit(): void {
-  }
-
-  collapse(target : EventTarget | null) {
-    const targetHTML = (target as HTMLInputElement);
-    const hiddenInfo = targetHTML.nextElementSibling as HTMLElement;
-    if (hiddenInfo.style.maxHeight) {
-      hiddenInfo.style.maxHeight = "";
-    } else {
-      hiddenInfo.style.maxHeight = hiddenInfo.scrollHeight + "px";
-    }
   }
 
 }
