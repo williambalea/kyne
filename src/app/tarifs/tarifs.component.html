@@ -1,4 +1,15 @@
 <div class="tarifs-body">
+
+  <h2>Collapsibles</h2>
+
+  <mdc-card>
+    <button type="button" class="collapsible" (click)="collapse($event.target)">Open Collapsible</button>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </mdc-card>
+
+  
   <h2>Services offerts</h2>
   <p>
     Notre équipe est spécialisé en traitements spécifiques selon les pathologies suivantes : 
@@ -10,10 +21,9 @@
     <div *ngFor="let service of services">
       <mdc-list-divider *ngIf="service != services[0]"></mdc-list-divider>
       <div class="card-media-list">
-        <div class="card-media mdc-card__media mdc-card__media--square" [style.background-image]="service.photo">
-        </div>
+        <div class="card-media mdc-card__media mdc-card__media--square" [style.background-image]="service.photo"></div>
         <div class="card-content">
-          <h3>{{service.title}}</h3>
+          <h4>{{service.title}}</h4>
           <p>{{service.desc}}</p>
         </div>
       </div>
