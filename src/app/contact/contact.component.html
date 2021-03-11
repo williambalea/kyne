@@ -1,38 +1,60 @@
 <div class="contact-body">
-  <mdc-card class="card-contact">
-    <div class="card-media mdc-card__media mdc-card__media--16-9"></div>
-    <div class="card-content">
-      <a href="tel:514-513-2856"><span class="material-icons">phone</span> 514-513-2856</a>
-      <p><span class="material-icons">mail</span> lumygeorge@gmail.com</p>
-      <p><span class="material-icons">location_on</span> 2400 Av. de l'Esplanade suite 204, Mascouche QC, J7K 0K9 </p>
-      <a href="http://www.facebook.com/KynesioLux" class="facebook-link"><i class="fab fa-facebook material-icons"></i> Visitez notre page
-        Facebook!</a>
-    </div>
-    <mdc-card-actions>
-      <button (click)="openMaps()" mdc-button mdcCardAction="button">
-        <span class="material-icons">map</span>
-        Ouvrir dans Google Maps
-      </button>
-    </mdc-card-actions>
-  </mdc-card>
+  <h2 mdcHeadline3>Nous contacter</h2>
+  <div class="container">
+
+    <mdc-card class="card-contact">
+      <div class="card-media mdc-card__media mdc-card__media--16-9"></div>
+      <div class="card-content">
+        
+        <mdc-list [interactive]="false">
+          <mdc-list-item>
+            <mdc-icon mdcListItemGraphic>phone</mdc-icon>
+            <a href="tel:514-513-2856">514-513-2856</a>
+          </mdc-list-item>
+          <mdc-list-item>
+            <mdc-icon mdcListItemGraphic>mail</mdc-icon>
+            lumygeorge@gmail.com
+          </mdc-list-item>
+          <mdc-list-item>
+            <mdc-icon mdcListItemGraphic>location_on</mdc-icon>
+            2400 Av. de l'Esplanade suite 204, Mascouche QC, J7K 0K9
+          </mdc-list-item>
+          <mdc-list-item>
+            <i class="fab fa-facebook material-icons facebook-link" mdcListItemGraphic></i>
+            <a href="http://www.facebook.com/KynesioLux" class="facebook-link">
+              Visitez notre page Facebook!
+            </a>
+          </mdc-list-item>
+        </mdc-list>
+      </div>
+      <mdc-card-actions [fullBleed]="true">
+        <button (click)="openMaps()" mdc-button mdcCardAction="button">
+          Ouvrir dans Google Maps
+          <mdc-icon>launch</mdc-icon>
+        </button>
+      </mdc-card-actions>
+    </mdc-card>
+
+
+    <mdc-card class="card-contact">
+      <mdc-data-table class="table">
+        <table mdcDataTableTable>
+          <thead>
+            <tr mdcDataTableHeaderRow>
+              <th mdcDataTableHeaderCell>Jour</th>
+              <th mdcDataTableHeaderCell>Heures</th>
+            </tr>
+          </thead>
+          <tbody mdcDataTableContent>
+            <tr mdcDataTableRow *ngFor="let schedule of openHours">
+              <td mdcDataTableCell>{{schedule.day}}</td>
+              <td mdcDataTableCell>{{schedule.hours}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </mdc-data-table>
+    </mdc-card>
+  </div>
 
   
-  <mdc-card class="card-contact">
-    <mdc-data-table class="table">
-      <table mdcDataTableTable>
-        <thead>
-          <tr mdcDataTableHeaderRow>
-            <th mdcDataTableHeaderCell>Jour</th>
-            <th mdcDataTableHeaderCell>Heures</th>
-          </tr>
-        </thead>
-        <tbody mdcDataTableContent>
-          <tr mdcDataTableRow *ngFor="let schedule of openHours">
-            <td mdcDataTableCell>{{schedule.day}}</td>
-            <td mdcDataTableCell>{{schedule.hours}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </mdc-data-table>
-  </mdc-card>
 </div>

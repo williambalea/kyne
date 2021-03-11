@@ -5,7 +5,7 @@
 
 .contact-body {
   padding: 24px 100px;
-  display: flex;
+  padding-top: 0;
   margin: auto;
 }
 
@@ -14,12 +14,8 @@
 }
 
 .card-contact {
-  width: 50%;
   margin: 10px 10px;
-}
-
-.card-content {
-  padding: 16px;
+  flex-grow: 1;
 }
 
 a {
@@ -32,6 +28,10 @@ a {
 }
 
 .table {
-  width: -webkit-fill-available;
   border: medium;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }

@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@use "./styles/variables";
 @use './styles/body';
 
 @use '@material/theme' with (
@@ -12,6 +13,7 @@
 
 // MDC Typography
 @use '@material/typography/mdc-typography';
+@use './styles/typography';
 
 // MDC Button
 @use './styles/button';
@@ -27,3 +29,11 @@
 
 // MDC data-table
 @use './styles/data-table';
+
+// MDC list
+@use '@material/list/mdc-list';
+@use '@material/list';
+
+// MDC elevation
+@use '@material/elevation/mdc-elevation';
+

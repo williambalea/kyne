@@ -1,12 +1,12 @@
 <div class="hero-image">
   <div class="hero-text">
-    <h1 id="hero-title">Soins thérapeutiques et massages</h1>
-    <p>Kinésithérapie • Orthothérapie • Massothérapie</p>
+    <div mdcHeadline2>Soins thérapeutiques et massages</div><br>
+    <div mdcSubtitle1>Kinésithérapie • Orthothérapie • Massothérapie</div>
   </div>
 </div>
 <div class="accueil-body">
-  <h2>Bienvenue chez KynesioLux</h2>
-  <div id="intro">
+  <h2 mdcHeadline3>Bienvenue chez KynesioLux</h2>
+  <div id="intro" mdcBody1>
     <p>
       À la clinique KynesioLux, notre but est simple : vous aider
       à optimiser votre santé! Pour vos douleurs musculaires et articulaires,
@@ -30,15 +30,17 @@
       douleurs diverses.
     </p>
   </div>
-  <h2>Notre équipe</h2>
+
+  <h3 mdcHeadline3>Notre équipe</h3>
+
   <mdc-card>
     <div *ngFor="let member of team">
       <mdc-list-divider *ngIf="member != team[0]"></mdc-list-divider>
       <div class="card-media-list">
         <div class="card-media mdc-card__media mdc-card__media--square" [style.background-image]="member.photo"></div>
         <div class="card-content">
-          <h3>{{member.name}}</h3>
-          <p>{{member.title}}</p>
+          <div mdcHeadline4>{{member.name}}</div>
+          <div mdcSubtitle1>{{member.title}}</div>
         </div>
       </div>
     </div>

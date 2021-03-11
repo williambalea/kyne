@@ -6,6 +6,7 @@
   .services-offered-body {
     margin: auto;
     padding: 24px 100px;
+    padding-top: 0;
     text-align: justify;
   }
   
@@ -26,10 +27,10 @@
   }
   
   .card-content-description {
-    padding: 16px 16px 16px 16px;
+    padding: 24px;
   }
 
-  .card-content-description > p{
+  .card-content-description > p {
     margin: 0 0 0 0;
   }
   

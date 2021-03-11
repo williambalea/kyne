@@ -1,3 +1,5 @@
+@use '@material/list/_index' as list;
+
 .drawer-view-container {
     height: 100%;
     display: flex;
@@ -6,4 +8,24 @@
 .logo {
     width: auto;
     height: auto;
+}
+
+.phone {
+    text-align: center;
+    margin-top: 0;
+}
+
+svg {
+    margin-left: 12px;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.list--shaped {
+    @include list.single-line-shape-radius(0 50px 50px 0);
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
 }
