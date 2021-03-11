@@ -1,5 +1,5 @@
 <div class="services-offered-body">
-    <h2>Services offerts</h2>
+  <h2>Services offerts</h2>
   <p>
     Notre équipe est spécialisé en traitements spécifiques selon les pathologies suivantes :
     lombalgie, dorsalgie, sciatalgie, cervicalgie, problématiques musculo-squelettiques, récupération
@@ -19,8 +19,14 @@
         </div>
       </mdc-card-primary-action>
       <div class="card-media-list content">
-        <div class="card-content">
+        <div class="card-content-description">
           <p>{{service.desc}}</p>
+          <div *ngIf="service.source">
+            <br>
+            <a [href]="service.source">
+              {{service.source}}
+            </a>
+          </div>
         </div>
       </div>
     </div>

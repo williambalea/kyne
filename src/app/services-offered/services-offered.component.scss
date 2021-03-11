@@ -11,7 +11,7 @@
   
   .card-media {
     width: 60px;
-    border-radius: 50px;
+    border-radius: 100px;
     margin: 5px;
   }
   
@@ -23,16 +23,14 @@
   
   .card-content {
     margin: auto 12px;
-    font-weight: 200;
   }
   
-  .card-content > h4 {
-    font-weight: 400;
+  .card-content-description {
+    padding: 16px 16px 16px 16px;
   }
-  
-  .card-content > p {
-    margin-left: 12px;
-    margin-right: 12px;
+
+  .card-content-description > p{
+    margin: 0 0 0 0;
   }
   
   .content {
