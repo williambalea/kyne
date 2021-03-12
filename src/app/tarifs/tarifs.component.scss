@@ -1,6 +1,11 @@
+@import "@material/elevation/mdc-elevation";
+@import "../../styles/variables";
+
 :host {
   width: 100%;
   overflow: auto;
+  @include mdc-elevation($mdc-host-elevation);
+  z-index: 0;
 }
 
 .tarifs-body {

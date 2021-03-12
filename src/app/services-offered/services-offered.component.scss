@@ -1,7 +1,10 @@
 @import "../../styles/variables";
+@import "@material/elevation/mdc-elevation";
 :host {
   width: 100%;
   overflow: auto;
+  @include mdc-elevation($mdc-host-elevation);
+  z-index: 0;
 }
 
 .services-offered-body {

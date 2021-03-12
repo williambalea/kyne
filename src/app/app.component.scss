@@ -1,7 +1,7 @@
 @use '@material/list/_index' as list;
 @use '@material/drawer';
-
-@import '../styles/variables';
+@import "@material/ripple/";
+@import "../styles/variables";
 
 .drawer-view-container {
     height: 100%;
@@ -10,6 +10,22 @@
 
 .drawer {
     @include drawer.fill-color-accessible($mdc-theme-primary);
+    @include drawer.z-index(0);
+
+    .mdc-list {
+        margin: 50px 5px auto 0px;
+    }
+
+    .mdc-list-item {
+        justify-content: center;
+        color: $mdc-theme-on-primary;
+        margin-left: 0px;
+    }
+
+    // This needs 3-class specificity to override MDC Drawer styles
+    .mdc-list .mdc-list-item {
+        @include states-activated(#fff);
+    }
 }
 
 .logo {
@@ -20,12 +36,14 @@
 .phone {
     text-align: center;
     margin-top: 0;
+    color: $mdc-theme-on-primary;
 }
 
 svg {
     margin-left: 12px;
     margin-right: auto;
     margin-top: 16px;
+    fill: $mdc-theme-on-primary;
 }
 
 .list--shaped {

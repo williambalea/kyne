@@ -1,6 +1,13 @@
+@use '@material/button';
+@use '@material/ripple/_index' as ripple;
+@import '../../styles/variables';
+@import "@material/elevation/mdc-elevation";
+
 :host {
   width: 100%;
   overflow: auto;
+  @include mdc-elevation($mdc-host-elevation);
+  z-index: 0;
 }
 
 .contact-body {

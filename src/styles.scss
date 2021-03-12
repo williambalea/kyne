@@ -10,31 +10,17 @@
   $on-secondary: $mdc-theme-on-secondary,
 );
 
-// MDC Typography
-@use '@material/typography/mdc-typography';
-@use './styles/typography';
-
-// MDC Button
-@use './styles/button';
-
-// MDC Drawer
-@use './styles/drawer';
-
-// MDC card
-@use './styles/card';
-
-// Angular MDC
 @use '@angular-mdc/theme/material';
-
-// MDC data-table
-@use './styles/data-table';
-
-// MDC list
+@use '@material/typography/mdc-typography';
 @use '@material/list/mdc-list';
 @use '@material/list';
-
-// MDC elevation
 @use '@material/elevation/mdc-elevation';
+@use '@material/shape';
+@use './styles/typography';
+@use './styles/button';
+@use './styles/drawer';
+@use './styles/card';
+@use './styles/data-table';
 
 @import './styles/body';
 
