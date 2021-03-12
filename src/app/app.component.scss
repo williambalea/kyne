@@ -1,8 +1,15 @@
 @use '@material/list/_index' as list;
+@use '@material/drawer';
+
+@import '../styles/variables';
 
 .drawer-view-container {
     height: 100%;
     display: flex;
+}
+
+.drawer {
+    @include drawer.fill-color-accessible($mdc-theme-primary);
 }
 
 .logo {

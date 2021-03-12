@@ -1,11 +1,12 @@
+@import "../styles/variables";
 // Override user agent body margin for mdc-top-app-bar
 html, body {
   height: 100%;
 }
 
 body {
+  background-color: $mdc-theme-background;
   font-family: 'Roboto';
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
-  font-weight: normal;
 }

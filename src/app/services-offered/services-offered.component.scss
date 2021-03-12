@@ -1,44 +1,49 @@
+@import "../../styles/variables";
 :host {
-    width: 100%;
-    overflow: auto;
-  }
-  
-  .services-offered-body {
-    margin: auto;
-    padding: 24px 100px;
-    padding-top: 0;
-    text-align: justify;
-  }
-  
-  .card-media {
-    width: 60px;
-    border-radius: 100px;
-    margin: 5px;
-  }
-  
-  .card-media-list {
-    display: flex;
-    border-top-left-radius: inherit;
-    border-bottom-left-radius: inherit;
-  }
-  
-  .card-content {
-    margin: auto 12px;
-  }
-  
-  .card-content-description {
-    padding: 24px;
-  }
+  width: 100%;
+  overflow: auto;
+}
 
-  .card-content-description > p {
-    margin: 0 0 0 0;
-  }
-  
-  .content {
-    background-color: rgb(243, 243, 243);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.1s ease-out;
-    border-bottom-left-radius: inherit;
-    border-bottom-right-radius: inherit;
-  }
+.services-offered-body {
+  margin: auto;
+  padding: 24px 100px;
+  padding-top: 0;
+  text-align: justify;
+}
+
+.card-media {
+  width: 60px;
+  border-radius: 100px;
+  margin: 5px;
+}
+
+.card-media-list {
+  display: flex;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.card-content {
+  margin: auto 12px;
+}
+
+.card-content-description {
+  padding: 24px;
+}
+
+.card-content-description > p {
+  margin: 0 0 0 0;
+}
+
+.content {
+  background-color: #eee;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-out;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.shadow {
+  box-shadow: inset 0 8px 6px -6px rgb(172, 172, 172);
+}

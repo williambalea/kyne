@@ -1,14 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@use "./styles/variables";
-@use './styles/body';
+@use "./styles/variables" as *;
 
 @use '@material/theme' with (
-  $primary: #ff9f1c,
-  $secondary: #4ecdc4,
-  $background: #f7fffe,
+  $primary: $mdc-theme-primary,
+  $secondary: $mdc-theme-secondary,
+  $background: $mdc-theme-background,
 
-  $on-primary: #fff,
-  $on-secondary: #000,
+  $on-primary: $mdc-theme-on-primary,
+  $on-secondary: $mdc-theme-on-secondary,
 );
 
 // MDC Typography
@@ -36,4 +35,6 @@
 
 // MDC elevation
 @use '@material/elevation/mdc-elevation';
+
+@import './styles/body';
 
