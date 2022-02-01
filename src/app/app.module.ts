@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { TarifsComponent } from './tarifs/tarifs.component';
-import { EquipeComponent } from './equipe/equipe.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServicesOfferedComponent } from './services-offered/services-offered.component';
 
@@ -14,7 +13,6 @@ import { ServicesOfferedComponent } from './services-offered/services-offered.co
     AppComponent,
     AccueilComponent,
     TarifsComponent,
-    EquipeComponent,
     ContactComponent,
     ServicesOfferedComponent
   ],

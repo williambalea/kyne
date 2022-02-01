@@ -5,8 +5,8 @@
         <mdc-icon *ngIf="topbarList.style.display === 'none'">menu</mdc-icon>
         <mdc-icon *ngIf="topbarList.style.display === 'block'">close</mdc-icon>
       </button>
-      <div class="svg-logo-topbar" [routerLink]="['/accueil']">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 400 66.67"><path [attr.d]="logo"/></svg>
+      <div [routerLink]="['/accueil']">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 800 66.67"><path [attr.d]="logo"/></svg>
       </div>
     </mdc-top-app-bar-section>
     <mdc-top-app-bar-section align="end">

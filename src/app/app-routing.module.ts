@@ -11,6 +11,7 @@ const routes: Routes = [
   { path: 'services', component: ServicesOfferedComponent},
   { path: 'tarifs', component: TarifsComponent},
   { path: 'contacts', component: ContactComponent},
+  { path: '**', redirectTo: '/accueil'}
 ];
 
 @NgModule({
