@@ -24,7 +24,7 @@
 
     // This needs 3-class specificity to override MDC Drawer styles
     .mdc-list .mdc-list-item {
-        @include states-activated(#fff);
+        @include states-activated(#000);
     }
 }
 
@@ -38,7 +38,7 @@
 
     // This needs 3-class specificity to override MDC Drawer styles
     .mdc-list .mdc-list-item {
-        @include states-activated(#fff);
+        @include states-activated(#000);
     }
 
     display: none;
