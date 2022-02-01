@@ -28,6 +28,36 @@
     }
 }
 
+.topbar {
+    @include drawer.fill-color-accessible($mdc-theme-primary);
+
+    .mdc-list-item {
+        color: $mdc-theme-on-primary;
+        margin-left: 0px;
+    }
+
+    // This needs 3-class specificity to override MDC Drawer styles
+    .mdc-list .mdc-list-item {
+        @include states-activated(#fff);
+    }
+
+    display: none;
+
+}
+
+.show-shadow {
+    box-shadow: 0 0px 20px 0px rgb(0, 0, 0);
+}
+
+.topbar-title {
+    box-shadow: 0 0px 8px 0px rgb(0, 0, 0);
+}
+
+.topbar-list {
+    margin-right: 24px;
+    display: none;
+}
+
 .logo {
     width: auto;
     height: auto;
@@ -39,10 +69,11 @@
     color: $mdc-theme-on-primary;
 }
 
+.svg-logo {
+    text-align: center;
+}
+
 svg {
-    margin-left: 12px;
-    margin-right: auto;
-    margin-top: 16px;
     fill: $mdc-theme-on-primary;
 }
 
@@ -53,4 +84,18 @@ svg {
 a {
     text-decoration: none;
     color: currentColor;
+}
+
+.svg-logo-topbar {
+    height: 50%;
+}
+
+@media (max-width: 1000px) {
+    .drawer {
+        display: none;
+    }
+
+    .topbar {
+        display: block;
+    }
 }

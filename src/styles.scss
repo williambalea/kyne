@@ -21,6 +21,11 @@
 @use './styles/drawer';
 @use './styles/card';
 @use './styles/data-table';
+@use './styles/top-app-bar';
 
 @import './styles/body';
 
+button:focus {
+  outline: none;
+  box-shadow: none;
+}

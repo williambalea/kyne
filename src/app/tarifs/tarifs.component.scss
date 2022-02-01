@@ -27,3 +27,15 @@
 .call-message {
   text-align: center;
 }
+
+@media (max-width: 1000px) {
+  .tarifs-body {
+    padding: 24px;
+    margin-top: 55px;
+  }
+
+  .headline3 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+}

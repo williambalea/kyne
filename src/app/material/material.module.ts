@@ -8,6 +8,8 @@ import { MDCDataTableModule } from '@angular-mdc/web/data-table';
 import { MdcTypographyModule } from '@angular-mdc/web/typography';
 import { MdcIconModule } from '@angular-mdc/web/icon';
 import { MdcElevationModule } from '@angular-mdc/web/elevation';
+import {MdcTopAppBarModule} from '@angular-mdc/web/top-app-bar';
+
 
 @NgModule({
   declarations: [],
@@ -23,6 +25,7 @@ import { MdcElevationModule } from '@angular-mdc/web/elevation';
     MdcTypographyModule,
     MdcIconModule,
     MdcElevationModule,
+    MdcTopAppBarModule
   ],
 })
 export class MaterialModule { }
