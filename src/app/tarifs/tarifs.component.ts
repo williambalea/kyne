@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TarifsComponent implements OnInit {
   pricesMasso = [
-    {service: "30 min", price: 40},
-    {service: "60 min", price: 70},
-    {service: "90 min", price: 95},
+    {service: "30 min", price: 45},
+    {service: "60 min", price: 85},
+    {service: "90 min", price: 110},
     {service: "120 min", price: 120},
     {service: "Pour enfant", price: 30},
   ];
