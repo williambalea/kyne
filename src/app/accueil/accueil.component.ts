@@ -10,7 +10,7 @@ export class AccueilComponent implements OnInit {
     {photo: 'url(/assets/team/lumy.jpg)', name: 'Luminita Gheorghe', title: 'Orthothérapeute'},
     {photo: 'url(/assets/team/caro.jpg)', name: 'Caroline Otis', title: 'Kinésithérapeute'},
     {photo: 'url(/assets/team/david.jpg)', name: 'David Desrochers', title: 'Orthothérapeute'},
-    {photo: 'url(/assets/team/carl.jpg)', name: 'Carl O\'Reilly', title: 'Orthothérapeute'},
+    // {photo: 'url(/assets/team/carl.jpg)', name: 'Carl O\'Reilly', title: 'Orthothérapeute'},
   ];
   constructor() { }
 
