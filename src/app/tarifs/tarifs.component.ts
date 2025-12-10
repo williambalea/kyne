@@ -11,7 +11,7 @@ export class TarifsComponent implements OnInit {
     {service: "60 min", price: 100},
     {service: "90 min", price: 125},
     {service: "120 min", price: 150},
-    {service: "Pour enfant", price: 30},
+    {service: "Pour enfant", price: 60},
   ];
 
   pricesOthers = [
