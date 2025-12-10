@@ -14,7 +14,7 @@ This is a little frontend website using angular mdc instead of the default angul
 ## Hosting
 
 1. Have firebase-tools installed globally.
-2. You might have to change node version to fit firebase's needed version.
+2. You might have to change node version to fit firebase's needed version. Firebase has a different node version than Angular.
 3. run `firebase --version` to check if installed and ready to deploy.
 4. Authenticate with `firebase login` or `firebase login --reauth` if not done already.
 5. run `firebase deploy`.
